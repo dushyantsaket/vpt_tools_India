@@ -2,6 +2,7 @@ import React from "react";
 import PageTemplate from "../components/PageTemplate";
 
 const sections = [
+  "shipping tikets",
   "Delivery Time",
   "Shipping Charges",
   "Order Tracking",
