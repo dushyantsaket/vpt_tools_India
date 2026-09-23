@@ -19,7 +19,8 @@ const TapariaPrecisionSeries = () => {
       id: 'first',
       name: 'Pipe Wrench (Stillson Type)',
       conformity: 'Generally Conforming to IS 4003 (I) 1978',
-      description: 'Used for heavy duty applications. Jaws are drop forged from high grade carbon steel. Precision machined integral teeth.',
+      description: ' Used by  the  for   to be 
+        for heavy duty applications. Jaws are drop forged from high grade carbon steel. Precision machined integral teeth.',
       specs: [
         { prodNo: '1272', d: '33', t: '15', l: '250', wt: '500' },
         { prodNo: '1273', d: '42', t: '19', l: '300', wt: '750' },
