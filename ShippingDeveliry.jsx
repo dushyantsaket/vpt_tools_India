@@ -12,6 +12,8 @@ const sections = [
   "Delayed Orders",
   "Lost Packages",
   "Delivery FAQs",
+    "Lost Packages",
+  "Delivery FAQs",
 ];
 
 export default function ShippingDeliveryPolicy() {
