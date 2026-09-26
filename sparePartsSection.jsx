@@ -6,6 +6,7 @@ const spareParts = [
   { id: 'grinder', name: 'Grinder Spare Parts',       count: 120, icon: Settings, accent: '#2563eb' },
   { id: 'hammer',  name: 'Demolition Hammer Spare',   count: 85,  icon: Hammer,   accent: '#dc2626' },
   { id: 'cutter',  name: 'Cutter Spare Parts',         count: 64,  icon: Scissors, accent: '#16a34a' },
+  
   { id: 'welding', name: 'Welding Machine Spare',      count: 42,  icon: Zap,      accent: '#d97706' },
 ];
 
