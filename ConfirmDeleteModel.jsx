@@ -12,7 +12,7 @@ function ConfirmDeleteModal({ item, onConfirm, onCancel }) {
       >
         <h2 className="text-lg font-semibold mb-4">Confirm Deletion</h2>
         <p className="text-sm mb-6">
-          Are you sure you want to delete the "{item.name}"{" "}
+          Are you sure you want to delete the  items os this "{item.name}"{" "}
           {item.isDirectory ? "folder" : "file"}?
         </p>
         <div className="flex justify-end gap-2">
