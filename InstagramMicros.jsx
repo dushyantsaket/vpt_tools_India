@@ -674,6 +674,11 @@ const WhyChooseUsWithDrawer = () => {
               )}
             </div>
           </div>
+              <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+      onClick={onCancel}
+    >
+
           <style>{`
             @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
             @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
