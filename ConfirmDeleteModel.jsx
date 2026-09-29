@@ -15,6 +15,11 @@ function ConfirmDeleteModal({ item, onConfirm, onCancel }) {
           Are you sure you want to delete the  items os this "{item.name}"{" "}
           {item.isDirectory ? "folder" : "file"}?
         </p>
+            <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+      onClick={onCancel}
+    >
+
         <div className="flex justify-end gap-2">
           <button
             className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
