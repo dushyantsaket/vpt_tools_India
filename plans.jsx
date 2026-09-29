@@ -80,6 +80,21 @@ const PLAN_CATALOG = {
       features: ["Everything in Pro", "Version history", "Priority support"],
       popular: false,
     },
+     {
+      id: "plan_TaT0CHvlh4iqPY",
+      name: "Starter",
+      tagline: "Great for individuals",
+      storage: "2 TB",
+      price: 199,
+      period: "/mo",
+      cta: "Choose 2 TB",
+      features: [
+        "Secure cloud storage",
+        "Link & folder sharing",
+        "Basic support",
+      ],
+      popular: false,
+    },
   ],
 };
 
