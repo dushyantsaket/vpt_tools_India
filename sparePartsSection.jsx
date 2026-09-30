@@ -105,6 +105,9 @@ const SparePartsSection = () => {
             to="/contact"
             style={{ background: '#fff', color: '#111', padding: '12px 22px', borderRadius: '0', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.06em', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}
           >
+            <label htmlFor="email" className="block mb-1 font-bold">
+            Email
+          </label>
             Get Support <ArrowRight size={14} />
           </Link>
         </div>
