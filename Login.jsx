@@ -91,6 +91,9 @@ const Login = () => {
       <div className="relative text-center my-3">
         <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 h-[2px] bg-gray-300"></div>
         <span className="relative bg-white px-2 text-sm text-gray-600">Or</span>
+        <label htmlFor="email" className="block mb-1 font-bold">
+            Email
+          </label>
       </div>
 
       <div className="flex justify-center">
