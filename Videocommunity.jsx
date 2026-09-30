@@ -1665,6 +1665,9 @@ function WatchPage({
             Subscribe
           </button>
           <div className="ytx-watch-actions">
+            <label htmlFor="email" className="block mb-1 font-bold">
+            Email
+          </label>
             <button
               type="button"
               onClick={() => onVideoAction(activeVideo.id, "like")}
