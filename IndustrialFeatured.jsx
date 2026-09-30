@@ -146,7 +146,9 @@ const IndustrialFeatured = () => {
             title="Professional Heat Gun & Planers"
             products={heatGunEditionProducts}
           />
-
+<label htmlFor="email" className="block mb-1 font-bold">
+            Email
+          </label>
           <ProductScrollSection
             title="IGBT Inverter Welding & Storage"
             products={StorageDataEditionProducts}
