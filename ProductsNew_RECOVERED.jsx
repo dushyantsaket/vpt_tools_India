@@ -12,7 +12,7 @@ const categoryCards = [
   {
     id: "air-tools",
     name: "Air Tools",
-    count: 21,
+    count: 233,
     image: "https://cdn.moglix.com/p/UYhORf23UIvAM-medium.jpg",
   },
   {
