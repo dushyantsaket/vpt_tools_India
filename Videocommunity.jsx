@@ -92,7 +92,7 @@ const videoEntries = [
   ],
   [
     "New Power Tool Video",
-    "vVgtZC5vHa8",
+    "vVgtZC5vHa888",
     "https://www.youtube.com/watch?v=vVgtZC5vHa8",
     ["power-tools", "new"],
   ],
