@@ -34,7 +34,7 @@ const PLAN_CATALOG = {
       id: "plan_TaT1S75W2x86fv",
       name: "Ultimate",
       tagline: "Teams & power users",
-      storage: "10 TB",
+      storage: "100 TB",
       price: 699,
       period: "/mo",
       cta: "Choose 10 TB",
