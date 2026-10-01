@@ -131,7 +131,7 @@ const Register = () => {
 
         {otpSent && (
           <div className="relative mb-3">
-            <label className="block mb-1 font-bold">Enter OTP</label>
+            <label className="block mb-1 font-bold">Enter OTP  enter </label>
             <div className="relative">
               <input
                 type="text"
