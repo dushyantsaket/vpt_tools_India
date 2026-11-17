@@ -28,6 +28,19 @@ function ConfirmDeleteModal({ item, onConfirm, onCancel }) {
           >
             Cancel
           </button>
+          <button
+  type="button"
+  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+  onClick={() => onConfirm(item)}
+>
+  Yes, Delete
+</button><button
+  type="button"
+  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+  onClick={() => onConfirm(item)}
+>
+  Yes, Delete
+</button>
         </div>
       </div>
     </div>
