@@ -1,43 +1,23 @@
+const [deleteItem, setDeleteItem] = useState(null);
 
-function ConfirmDeleteModal({ item, onConfirm, onCancel }) {
-  if (!item) return null;
+const handleDelete = async (item) => {
+  console.log("Deleting:", item);
 
-  return (
-    <div
-      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
-      onClick={onCancel}
-    >
-      <div
-        className="bg-white p-6 rounded-lg shadow-md w-[90%] max-w-md"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <h2 className="text-lg font-semibold mb-4">
-          Confirm Deletion
-        </h2>
+  // Your API delete request here
 
-        <p className="text-sm mb-6">
-          Are you sure you want to delete "{item.name}"{" "}
-          {item.isDirectory ? "folder" : "file"}?
-        </p>
+  setDeleteItem(null);
+};
 
-        <div className="flex justify-end gap-2">
-          <button
-            className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-            onClick={() => onConfirm(item)}
-          >
-            Yes, Delete
-          </button>
+return (
+  <>
+    <button onClick={() => setDeleteItem(file)}>
+      Delete
+    </button>
 
-          <button
-            className="bg-gray-300 text-black px-4 py-2 rounded hover:bg-gray-400"
-            onClick={onCancel}
-          >
-            Cancel
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default ConfirmDeleteModal;
+    <ConfirmDeleteModal
+      item={deleteItem}
+      onConfirm={handleDelete}
+      onCancel={() => setDeleteItem(null)}
+    />
+  </>
+);
