@@ -11,7 +11,28 @@ const Login = () => {
   });
   const [serverError, setServerError] = useState("");
   const navigate = useNavigate();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
+  setLoading(true);
+  setServerError("");
+
+  try {
+    const data = await loginUser(formData);
+
+    if (data.error) {
+      setServerError(data.error);
+    } else {
+      navigate("/");
+    }
+  } catch (err) {
+    setServerError(
+      err.response?.data?.error || "Something went wrong."
+    );
+  } finally {
+    setLoading(false);
+  }
+};
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (serverError) setServerError("");
@@ -79,6 +100,9 @@ const Login = () => {
         >
           Login
         </button>
+        <button type="submit" disabled={loading}>
+  {loading ? "Logging in..." : "Login"}
+</button>
       </form>
 
       <p className="text-center mt-3">
