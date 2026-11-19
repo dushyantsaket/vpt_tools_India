@@ -8,6 +8,28 @@ console.log("Connecting to:", uri);
 mongoose.connect(uri)
   .then(async () => {
     console.log("MongoDB Connection Successful!");
+    const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  setLoading(true);
+  setServerError("");
+
+  try {
+    const data = await loginUser(formData);
+
+    if (data.error) {
+      setServerError(data.error);
+    } else {
+      navigate("/");
+    }
+  } catch (err) {
+    setServerError(
+      err.response?.data?.error || "Something went wrong."
+    );
+  } finally {
+    setLoading(false);
+  }
+};
     const collections = await mongoose.connection.db.listCollections().toArray();
     console.log("Collections:", collections.map(c => c.name));
     
