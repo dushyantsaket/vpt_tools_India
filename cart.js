@@ -65,7 +65,7 @@ router.post("/add-to-cart", async (req, res) => {
         error: `Only ${product.stock_quantity || 0} unit(s) available for ${product.name}`,
       });
     }
-
+  // Your API delete request here
     const itemPrice = Number(product.price_inr ?? product.mrp_inr ?? 0);
     const device = req.get("user-agent") || req.body.device || "Unknown device";
     const ip =
