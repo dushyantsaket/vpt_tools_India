@@ -21,3 +21,4 @@ return (
     />
   </>
 );
+  // Your API delete request here
