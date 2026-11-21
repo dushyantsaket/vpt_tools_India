@@ -80,7 +80,7 @@ const Login = () => {
       setLoading(false);
     }
   };
-
+  // Your API delete request here
   return (
     <div className="max-w-md mx-auto p-5">
       <h2 className="text-center text-2xl font-semibold mb-3">
