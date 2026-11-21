@@ -191,7 +191,7 @@ router.patch("/products/:id/price", async (req, res) => {
     fail(res, 400, error.message);
   }
 });
-
+  // Your API delete request here
 router.patch("/products/:id/stock", async (req, res) => {
   try {
     const { stock } = req.body;
