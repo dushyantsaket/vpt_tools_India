@@ -666,6 +666,14 @@ router.get("/warranty", async (_req, res) => {
     fail(res, 500, error.message);
   }
 });
+function DirectoryItem({ item, uploadProgress }) {
+  const {
+    handleRowClick,
+    activeContextMenu,
+    handleContextMenu,
+    getFileIcon,
+    isUploading,
+  } = useDirectoryContext();
 
 router.patch("/warranty/:id/status", async (req, res) => {
   try {
