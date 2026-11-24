@@ -26,6 +26,14 @@ import {
   MessageCircle,
   MapPin,
 } from "lucide-react";
+function DirectoryItem({ item, uploadProgress }) {
+  const {
+    handleRowClick,
+    activeContextMenu,
+    handleContextMenu,
+    getFileIcon,
+    isUploading,
+  } = useDirectoryContext();
 
 // ---------- Service Data ----------
 const serviceData = {
