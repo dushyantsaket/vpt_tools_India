@@ -41,6 +41,14 @@ function DirectoryItem({ item, uploadProgress }) {
   }
 
   const isUploadingItem = item.id.startsWith("temp-");
+function DirectoryItem({ item, uploadProgress }) {
+  const {
+    handleRowClick,
+    activeContextMenu,
+    handleContextMenu,
+    getFileIcon,
+    isUploading,
+  } = useDirectoryContext();
 
   return (
     <div
