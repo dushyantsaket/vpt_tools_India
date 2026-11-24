@@ -405,6 +405,16 @@
       "isInStock": true,
       "addToCartUrl": "https://sparepartwala.in/product-category/chainsaw-spare-parts/page/2/?add-to-cart=31283"
     },
+
+    function DirectoryItem({ item, uploadProgress }) {
+  const {
+    handleRowClick,
+    activeContextMenu,
+    handleContextMenu,
+    getFileIcon,
+    isUploading,
+  } = useDirectoryContext();
+
     {
       "id": 31263,
       "name": "Chainsaw Clutch Drum",
