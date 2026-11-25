@@ -151,7 +151,7 @@ const Settings = () => {
     address: "Gopal Das Rd, Sidhi, Jamodi Khurd, Madhya Pradesh 486661",
     state: "Madhya Pradesh",
     city: "Sidhi",
-    pincode: "486661",
+    pincode: "456055",
     country: "India",
     logo: null,
     invoiceLogo: null,
