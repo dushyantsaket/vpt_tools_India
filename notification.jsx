@@ -119,7 +119,7 @@ const ImageUpload = ({ label, value, onChange, accept = "image/*" }) => {
     </div>
   );
 };
-
+// IMAGE UPLOAD COMPONENT (with drag & drop)
 // ============================================
 // MAIN SETTINGS COMPONENT
 // ============================================
