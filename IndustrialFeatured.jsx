@@ -141,7 +141,10 @@ const IndustrialFeatured = () => {
             title="Industrial Tools Edition"
             products={industrialEditionProducts}
           />
-
+          <ProductScrollSection
+            title="IGBT Inverter Welding & Storage"
+            products={StorageDataEditionProducts}
+          />
           <ProductScrollSection
             title="Professional Heat Gun & Planers"
             products={heatGunEditionProducts}
